@@ -1,0 +1,22 @@
+{
+  "name": "ptekaro",
+  "homepage": "https://Rishank99.github.io/ptekaro/",
+  "version": "0.0.0",
+  "devDependencies": {
+    "vite": "^7.0.4"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.11"
+  }
+}
