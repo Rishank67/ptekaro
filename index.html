@@ -15,7 +15,8 @@
       referrerpolicy="no-referrer"
     />
     <title>PTEKaro</title>
-    <link rel="stylesheet" crossorigin href="/ptekaro/assets/main-CECaCtfA.css">
+    <script type="module" crossorigin src="/ptekaro/assets/main-B52NZ49S.js"></script>
+    <link rel="stylesheet" crossorigin href="/ptekaro/assets/main-CQ-HgIGg.css">
   </head>
   <body
     class="font-[Poppins] bg-gradient-to-b from-blue-200 via-white to-blue-200 h-screen"
@@ -25,14 +26,16 @@
         <nav class="flex justify-between items-center w-[92%] mx-auto">
           <div>
             <img
-              class="w-[25rem] h-[8rem]"
+              class="w-[100%] md:w-[25rem] h-[8rem]"
               src="/ptekaro/images/logo2.png"
               alt="PTEKaro-logo"
             />
           </div>
-          <div class="">
+          <div
+            class="nav-links lg:static absolute bg-blue-500 shadow-md lg:shadow-none left-0 top-[-100rem] lg:min-h-fit lg:w-auto w-full flex items-center z-2 px-5 py-5 h-115 lg:h-auto"
+          >
             <ul
-              class="flex items-center gap-[4rem] text-white font-bold text-xl"
+              class="flex flex-col lg:flex-row lg:items-center lg:gap-[4rem] gap-[6rem] text-white font-bold text-xl"
             >
               <li>
                 <a class="hover:text-amber-300" href="">ABOUT</a>
@@ -48,27 +51,25 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="flex items-center gap-4">
             <button
               class="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-5 py-2 rounded-full hover:from-pink-300 hover:to-rose-300 shadow-2xl"
             >
               Sign In
             </button>
+            <ion-icon
+              onclick="onToggleMenu(this)"
+              name="menu"
+              class="text-3xl cursor-pointer lg:hidden"
+            ></ion-icon>
           </div>
         </nav>
       </div>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[92%] mx-auto bg-white/10 p-5 rounded-xl mt-5 backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
+        class="grid md:grid-cols-1 lg:grid-cols-2 gap-4 w-[92%] mx-auto bg-white/10 p-5 rounded-xl mt-5 backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
       >
         <div class="">
-          <!-- <h1 class="font-bold text-white text-4xl">
-            Book Your PTE Exam in Minutes – Fast, Easy & Reliable!
-          </h1>
-          <p>
-            Instant confirmation. Trusted by 10,000+ test takers. No hidden
-            fees.
-          </p> -->
           <div class="">
             <img
               src="/ptekaro/images/hero-banner.jpg"
@@ -78,7 +79,7 @@
           </div>
           <div class="text-center mt-5 text-white">
             <button
-              class="bg-gradient-to-r from-pink-500 to-rose-500 w-[60%] font-semibold rounded-full py-2 hover:from-pink-300 hover:to-rose-300"
+              class="bg-gradient-to-r from-pink-500 to-rose-500 w-[100%] sm:w-[60%] font-semibold rounded-full py-2 hover:from-pink-300 hover:to-rose-300"
             >
               Explore Our Courses
             </button>
@@ -94,7 +95,7 @@
           <form action="" class="space-y-6 text-[#FFFFFF40]md:shadow-2xl">
             <div class="relative text-center">
               <div
-                class="absolute top-1 left-28 md:left-29 bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
+                class="absolute top-1 left-[2%] sm:left-[21%] bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
               >
                 <i class="fa-solid fa-id-card"></i>
               </div>
@@ -104,13 +105,13 @@
                 placeholder="Name"
                 required
                 autocomplete="off"
-                class="w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
+                class="w-[100%] sm:w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
               />
             </div>
 
             <div class="relative text-center">
               <div
-                class="absolute top-1 left-28 md:left-29 bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
+                class="absolute top-1 left-[2%] sm:left-[21%] bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
               >
                 <i class="fa-solid fa-envelope-open"></i>
               </div>
@@ -120,13 +121,13 @@
                 placeholder="Email Address"
                 required
                 autocomplete="off"
-                class="w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
+                class="w-[100%] sm:w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
               />
             </div>
 
             <div class="relative text-center">
               <div
-                class="absolute top-1 left-28 md:left-29 bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
+                class="absolute top-1 left-[2%] sm:left-[21%] bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-red-800"
               >
                 <i class="fa-solid fa-phone"></i>
               </div>
@@ -136,12 +137,12 @@
                 placeholder="Mobile Number"
                 required
                 autocomplete="off"
-                class="w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
+                class="w-[100%] sm:w-[60%] px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg backdrop-blur-md border border-white/20 shadow-xl ring-1 ring-white/10 hover:ring-2 hover:ring-white/20 transition-all duration-300"
               />
             </div>
             <div class="text-center">
               <button
-                class="bg-gradient-to-r from-pink-500 to-rose-500 w-[60%] font-semibold rounded-full py-2 hover:from-pink-300 hover:to-rose-300 text-white"
+                class="bg-gradient-to-r from-pink-500 to-rose-500 w-[100%] sm:w-[60%] font-semibold rounded-full py-2 hover:from-pink-300 hover:to-rose-300 text-white"
               >
                 Book Now
               </button>
@@ -150,5 +151,21 @@
         </div>
       </div>
     </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[21%]");
+      }
+    </script>
   </body>
 </html>
